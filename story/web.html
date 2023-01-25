@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+<title>DynamicMap</title>
+<link rel="stylesheet">
+<script src="script.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.bg-image {
+  background-image: url("thumbnail.jpeg");
+  height: 95vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 90%;
+  padding: 20px;
+  text-align: center;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("thumbnail.jpeg");
+
+  /* Set a specific height */
+  min-height: 800px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* parallax text style */
+.parallaxtext{
+  height:600px;
+  background-color:rgb(255, 255, 255);
+  font-size:36px;
+  text-align: justify;
+  padding: 20px;
+}
+
+.p3 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 15px;}
+
+.footer {
+   background-color: #f5f5f5;
+   color:black;
+   text-align:center;
+   min-height:10vh;
+   display:flex;
+   flex-direction:column;
+   justify-content:space-between;
+  }  
+
+#block3 {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100vw;
+}
+#block3 h1 { 
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#block3 h2 {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #848484;
+  text-transform: uppercase;
+}
+
+#map-container {
+  width: 100%;
+  height: 500px;
+  border: none;
+  padding: 0;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+</style>
+</head>
+
+<div class="parallax"></div>
+
+
+<div class="bg-text">
+  <h1>An Experienced Traveller</h1>
+  <h3>Shifting Homes became a Great Life Journey</h3>
+</div>
+
+ 
+<div class="tab">
+  <div class="parallaxtext">
+      <div class="p3">
+            <p>In my 21 years of Life I lived a lot many cities and finally I even Shifted to a different 
+            continent, In India I shifted to 4 different cities in 4 different states after which I
+            shifted to Canada. I was Born in Mumbai, MH. and lived there for 12 years further I shifted
+            Indore, MP. in the Heart of India where I lived for 6 years and completed my High School 
+            Further I shifted to Noida, UP and Further to Faridabad, HR in the National Capital Region 
+            I was there in both the cities for a Year and a half each to complete my UnderGrad. 
+            Now Finally I moved to Lindsay, ON in Canada to continue my studies.
+            So I marked down all the cities where I have stayed in this map.
+            </p>
+    </div>
+  </div>
+</div>
+<div id="block3">
+      <h1>Life of a NOMAD:</h1>
+      <h2>Shifting Homes through Places</h2>
+</div>
+<div id="map-container">
+      <div id="map"></div>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE&callback=initMap&v=weekly"
+    defer
+  ></script>
+</div>
+
+<div class="footer">
+  <p>Map is Created by Anubhav Bhartiya</p>
+</div>
+
+
+</body>
+</html>
+
+
